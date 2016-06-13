@@ -113,7 +113,7 @@
             </button>
             <a href="{{ SITEURL }}/" class="navbar-brand">
                 {% if SITELOGO %}<img src="{{ SITEURL }}/{{ SITELOGO }}" width="{{ SITELOGO_SIZE }}"/> {% endif %}
-                {% if not HIDE_SITENAME %}{{ SITENAME }}{% endif %}
+                {% if not HIDE_SITENAME %}Home{% endif %}
             </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -151,11 +151,13 @@
     </div>
 </div> <!-- /.navbar -->
 <!-- Banner -->
+<div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
 {% if BANNER and BANNER_ALL_PAGES %}
     {% include 'includes/banner.html' %}
 {% elif BANNER and not BANNER_ALL_PAGES %}
     {% block banner %}{% endblock %}
 {% endif %}
+</div>
 <!-- End Banner -->
 <div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
     <div class="row">

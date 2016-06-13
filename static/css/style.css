@@ -221,3 +221,29 @@ figure.floatcenter, .align-center {
         font-size: 16px;
     }
 }
+
+/*
+ * Blog name and description
+ * From the official Bootstrap repository:
+ * https://github.com/twbs/bootstrap/blob/master/docs/examples/blog/blog.css
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 45px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+.navbar-brand {
+    padding-top: 17px;
+    padding-bottom: 13px;
+    }
