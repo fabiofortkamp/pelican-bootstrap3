@@ -1,7 +1,13 @@
 # pelican-bootstrap3
 
-This is a Bootstrap 3 theme for Pelican. It's fully responsive. Pelican-bootstrap3 is compatible with Pelican 3.3.0 and 
-higher. I will try to regularly update this theme with new features and newer versions of Bootstrap & Bootswatch.
+This is a forked and modified version of the [original][original] [Bootstrap 3][btsp] theme for Pelican. It's fully responsive. Pelican-bootstrap3 is compatible with Pelican 3.3.0 and 
+higher. 
+
+[original]: https://github.com/DandyDev/pelican-bootstrap3
+
+[btsp]: https://getbootstrap.com/
+
+
 
 ## CONTRIBUTING
 
@@ -13,7 +19,7 @@ theme better in general **please don't hesitate to make a pull request**. For co
 
 First:
 
-`git clone https://github.com/DandyDev/pelican-bootstrap3.git`
+`git clone https://github.com/fabiofortkamp/pelican-bootstrap3.git`
 
 Then:
 
@@ -161,13 +167,11 @@ You can show a short blurb of text about yourself and a picture. The following t
 * Your 'About Me' paragraph will be whatever the `ABOUT_ME` variable is set to (raw html is allowed)
 * Your avatar can be set by pointing the `AVATAR` variable to the relevant picture (e.g. 'images/profile.png')
 
-### Banner Image
+### Banner 
 
-A banner image can be added to the theme, displayed with the SITENAME and an optional subtitle. Config options are as follows:
+A "banner" text is produced above the article list,  displaying the content of the variables `SITENAME` and `SITESUBTITLE`. To turn off the banner, set `BANNER = False`.
 
-* Set the banner image with `BANNER = '/path/to/banner.png'`
-* Set the subtitle text with `BANNER_SUBTITLE = 'This is my subtitle'`
-* By default, the banner is only shown on the index page. To display the banner on all pages, set `BANNER_ALL_PAGES = True`
+By default, the banner is only shown on the index page. To display the banner on all pages, set `BANNER_ALL_PAGES = True`
 
 ### Sidebar options
 
@@ -296,16 +300,5 @@ Include a series of images in the sidebar.
 
 SIDEBAR_IMAGES = ["/path/to/image1.png", "/path/to/image2.png"]
 
-## Live example
-
-[This is my website](http://dandydev.net)
-
-If you want more examples of what you could do with this theme, have a [look here](EXAMPLES.md).
-
-## Screenshot
-
-![](screenshot.png)
-
-![](screenshot-article.png)
 
 
